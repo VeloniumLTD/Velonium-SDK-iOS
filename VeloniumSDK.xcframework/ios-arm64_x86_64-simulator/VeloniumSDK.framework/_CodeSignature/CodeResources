@@ -4,49 +4,65 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/libAppVerificationLibrary.a</key>
+		<data>
+		A3uyiuNM4BVcV1Kfy5qYkpw6dHE=
+		</data>
+		<key>Headers/VeloniumSDK.h</key>
+		<data>
+		woaviSQTpZvf26O7R/XdkPFlj+4=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		6GuB7ifDAOHa3LkOMG+kC+I+S4U=
+		AsAbCA7k7fLS7qJebCBEybOwLQo=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		XDZmAqIeVCvKrlKyhQjdmjeNiHs=
+		buSC+yab/KGwkKeOIm65VN43ymw=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QqmC9v0+ZVrdIetRAdhYqlQh8Bo=
+		5nulYtNevr4HMV+A/d4eWLlSIZI=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		N4RD2I/Izo2wqdauc2BmxZRlF5w=
+		2vt8hB44MGX9sYuTmELCtveVLfU=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gE8LwduLzjrePqu6XJXy8ZQVLg8=
+		AaDLxz2RWU2IH8ooUhvQ/M3dvGA=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Wj0V3JKa77PRvezwxtgI6GyZkE8=
+		hMBHkxJ3lR51LCUUQGI6rEQIKV4=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XDZmAqIeVCvKrlKyhQjdmjeNiHs=
+		buSC+yab/KGwkKeOIm65VN43ymw=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MfgPIm+xy+32EugMVcKETvuH4CY=
+		Xkjc59IR3lPhSrACtrNjx3bbqPI=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WS1VQKpWU1RII3HmBFU8eoweaxU=
+		KxSIntyGVfHaigqDT3iLndvxlCA=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RdNUP3YTm/BhTMDFaBk7fkcorrc=
+		rRBXDjrDGdTSv7/5hZ7mrorIgHE=
 		</data>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Hu3tQ/jqk5Cx7534T9wZM2nNZyA=
+		ykvUnoajD0Bsqq2cbRWkocVyeUI=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		vA1eaxoY96RHjbj78Pms27JxXa8=
+		</data>
+		<key>README.md</key>
+		<data>
+		Q0nwz7tMc51ZNhAZtiXx3ykhuUc=
 		</data>
 		<key>mraid.js</key>
 		<data>
@@ -59,74 +75,102 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libAppVerificationLibrary.a</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cpU6EzrO1Uze7ytdQur5xEq8QBM982hX6q8h3JWCmLs=
+			</data>
+		</dict>
+		<key>Headers/VeloniumSDK.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CINeiycY7SnQNKSDkFLR4dgN7y5E5hF048tr4ACesSg=
+			</data>
+		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MUhBB8RxadxlkqfylrdDwHSyLCFUSS+yVEscfTsLJPQ=
+			ERKqMSpxUujOT5yJZIoogDj7Gqin3tsSAsUp63/Xocw=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			flXbdaepV2geaL63YULbg5C964ELjcexchmw7U3mCF8=
+			KrzjFGHPySdr9eoLlX/hmkZ3ViBthRC5cQePpXIumTs=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s8wj8X+DDZd9VlqJKAhRNqk5Fn6Jc7FB6SGVoP6yq+M=
+			RmG+z0qzVvAMd1wKWDKrt0i+w7XnqTI9qq9nOPqlHKs=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sd08QhY7gtWWucb6fs2dE1sgJ71EvWJoQ+DScha9/9o=
+			kyuYpYNTn5U28SSvG1YAnQPfyGYOehByTQ94nNV9Cxg=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fZjYBxqOs9TEaRuYU1N4uZYX5ke+J1zTRxxwP7qtAwU=
+			DQ7k84yuKBBEUugvC6cYP5Kfw7KZE+g0O3RrjhgmDLY=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MUhBB8RxadxlkqfylrdDwHSyLCFUSS+yVEscfTsLJPQ=
+			ERKqMSpxUujOT5yJZIoogDj7Gqin3tsSAsUp63/Xocw=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t9jay6PgUHiFW5VBnnItcrF8zObw1aD3o5V2rMn9Eg8=
+			fBjjIMx0OL30ky2xGIT2LUu0QEniC2+/hIs3lkc9l6Q=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GH1ZLZwr6azuMKbf08N+R7VYmzaUk8+8NaqZvTnMJv4=
+			iYE6+1a4ZSbuWB0QtuxMVL6L7YPgmZfSgQ9ryER0Klk=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jgV4oxLZTzI3cK40uWy5DaliOPIMyXAR15nkO9S+EnI=
+			gHbFXj09ZPxCJCDXrRERSWV12i6W6yN6yBj1+Ib2wjM=
 			</data>
 		</dict>
 		<key>Modules/VeloniumSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c434+aAJJZdv2NzZNZl+dpL4Q1egj/HyxFWS58dVmvM=
+			9ivyF9spbdhKrvWLsxDw3bvKk5vqfoN8DX4nk/6oaiI=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HP7G333PDxxHO1AaG6nwr2jgIYvPxEPXizSjuhWief8=
+			</data>
+		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uLzKwS2p4sJfbhdmmExU1so04/s9SPWUl02N5jv+U78=
 			</data>
 		</dict>
 		<key>mraid.js</key>

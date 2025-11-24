@@ -1,0 +1,6 @@
+framework module VeloniumSDK {
+  umbrella header "VeloniumSDK.h"
+  export *
+
+  module * { export * }
+}

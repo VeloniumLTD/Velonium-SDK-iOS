@@ -11,6 +11,7 @@ import StoreKit
 import Swift
 import SystemConfiguration
 import UIKit
+@_exported import VeloniumSDK
 import WebKit
 import _Concurrency
 import _StringProcessing
@@ -902,6 +903,9 @@ public typealias VeloniumInitializationCallback = ((VeloniumSDK.VeloniumInitiali
     get
   }
   @objc public var battr: [Foundation.NSNumber]? {
+    get
+  }
+  @objc public var requestAddOn: Swift.String? {
     get
   }
   @objc(sharedWithBundleId:) public static func shared(bundleId: Swift.String? = nil) -> VeloniumSDK.VeloniumAppConfig
@@ -1855,6 +1859,12 @@ public let PBMMediationVideoParameters: Swift.String
   }
   @objc convenience public init(configId: Swift.String, mediationDelegate: any VeloniumSDK.VeloniumMediationDelegate)
   public init(configId: Swift.String, minSizePercentage: CoreFoundation.CGSize?, mediationDelegate: any VeloniumSDK.VeloniumMediationDelegate)
+  @objc public static func forBanner(configId: Swift.String, mediationDelegate: any VeloniumSDK.VeloniumMediationDelegate) -> VeloniumSDK.MediationInterstitialAdUnit
+  @objc public static func forVideo(configId: Swift.String, mediationDelegate: any VeloniumSDK.VeloniumMediationDelegate) -> VeloniumSDK.MediationInterstitialAdUnit
+  @objc public static func fetchBothFormats(bannerConfigId: Swift.String, videoConfigId: Swift.String, bannerAdSize: CoreFoundation.CGSize = CGSize(width: 320, height: 480), bannerAdditionalSizes: [CoreFoundation.CGSize] = [
+            CGSize(width: 300, height: 250),   
+            CGSize(width: 480, height: 320)    
+        ], videoMinDuration: Swift.Int = 5, videoMaxDuration: Swift.Int = 600, completion: @escaping (VeloniumSDK.Bid?) -> Swift.Void)
   @objc override public var configId: Swift.String {
     @objc get
   }
@@ -1888,6 +1898,13 @@ public let PBMMediationVideoParameters: Swift.String
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MediationRewardedAdUnit : VeloniumSDK.MediationBaseInterstitialAdUnit {
   @objc public init(configId: Swift.String, mediationDelegate: any VeloniumSDK.VeloniumMediationDelegate)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PBMMediationUtils) @objcMembers public class MediationUtils : ObjectiveC.NSObject {
+  @objc public static func isServerParameterInTargetingInfo(_ serverParameter: Swift.String, _ targetingInfo: [Swift.String]) -> Swift.Bool
+  @objc public static func isServerParameterInTargetingInfoDict(_ serverParameter: Swift.String, _ targetingInfoDictionary: [Swift.String : Swift.String]) -> Swift.Bool
+  @objc public static func isServerParameterDictInTargetingInfoDict(_ serverParametersDictionary: [Swift.String : Swift.String], _ targetingInfoDictionary: [Swift.String : Swift.String]) -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol VeloniumMediationDelegate {
