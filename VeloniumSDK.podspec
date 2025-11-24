@@ -26,10 +26,7 @@ Pod::Spec.new do |s|
   # XCFramework is built as static library - must set static_framework = true
   # To prevent duplicates, ensure pod is only added to Unity-iPhone target, not UnityFramework
   s.static_framework = false
-  
-  # Resources (JavaScript files for MRAID/OMSDK)
-  s.resources = 'Resources/*.js'
-  
+    
   # Required frameworks
   s.frameworks = [
     'CoreTelephony',
