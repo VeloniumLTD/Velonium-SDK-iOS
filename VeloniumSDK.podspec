@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VeloniumSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'VeloniumSDK - Mobile Advertising SDK'
   s.description      = <<-DESC
     VeloniumSDK is a comprehensive mobile advertising SDK that supports various ad formats
@@ -14,18 +14,10 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.6'
   s.swift_version = '5.0'
-  
-
+  s.static_framework = true
   
   # Use pre-built XCFramework instead of source files
-  s.vendored_frameworks = [
-    'VeloniumSDK.xcframework',
-    'OMSDK-Static_Prebidorg.xcframework'
-  ]
-  
-  # XCFramework is built as static library - must set static_framework = true
-  # To prevent duplicates, ensure pod is only added to Unity-iPhone target, not UnityFramework
-  s.static_framework = false
+  s.vendored_frameworks = 'VeloniumSDK.xcframework'
     
   # Required frameworks
   s.frameworks = [
