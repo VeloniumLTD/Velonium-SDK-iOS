@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   s.name             = 'VeloniumSDK'
   s.version          = '1.0.4'
   s.summary          = 'VeloniumSDK - Mobile Advertising SDK'
-  s.description      = 'VeloniumSDK is a comprehensive mobile advertising SDK supporting banner, interstitial, rewarded, and native ads. Uses a pre-built static XCFramework.'
+  s.description      = 'VeloniumSDK is a comprehensive mobile advertising SDK supporting banner, interstitial, rewarded, and native ads.'
   
   s.homepage         = 'https://github.com/VeloniumLTD/Velonium-SDK-iOS'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache', :file => 'LICENSE' }
   s.author           = { 'Velonium' => 'support@velonium.com' }
   s.source           = { :git => 'https://github.com/VeloniumLTD/Velonium-SDK-iOS.git', :tag => s.version.to_s }
 
