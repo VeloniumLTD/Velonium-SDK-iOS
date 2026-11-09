@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name VeloniumSDK
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VeloniumSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AdSupport
 import AppTrackingTransparency
 import CoreLocation
@@ -710,7 +711,7 @@ import ObjectiveC.runtime
   @objc public static let shared: VeloniumSDK.Utils
   @objc weak public var delegate: (any VeloniumSDK.NativeAdDelegate)?
   @objc public func findNative(adObject: Swift.AnyObject)
-  @objc public func round(coordinates: CoreLocation.CLLocationCoordinate2D, precision: Foundation.NSNumber?) -> CoreLocation.CLLocationCoordinate2D
+  @objc public func round(coordinates: _LocationEssentials.CLLocationCoordinate2D, precision: Foundation.NSNumber?) -> _LocationEssentials.CLLocationCoordinate2D
   @objc deinit
 }
 @objc(PBMVideoBasedAdUnitProtocol) public protocol VideoBasedAdUnitProtocol {
@@ -781,7 +782,7 @@ import ObjectiveC.runtime
   }
   @objc public var domain: Swift.String?
   @objc public var itunesID: Swift.String?
-  @objc public var location: CoreLocation.CLLocation?
+  @objc public var location: _LocationEssentials.CLLocation?
   @objc public var coordinate: Foundation.NSValue?
   @objc public var locationPrecision: Foundation.NSNumber?
   @objc public func setGlobalORTBConfig(_ ortbConfig: Swift.String?)
@@ -814,7 +815,7 @@ import ObjectiveC.runtime
   @objc override dynamic public init()
   @objc deinit
 }
-public typealias VeloniumInitializationCallback = ((VeloniumSDK.VeloniumInitializationStatus, (any Swift.Error)?) -> Swift.Void)
+public typealias VeloniumInitializationCallback = (VeloniumSDK.VeloniumInitializationStatus, (any Swift.Error)?) -> Swift.Void
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Velonium : ObjectiveC.NSObject {
   @objc public var timeoutUpdated: Swift.Bool
   @objc public var VeloniumServerAccountId: Swift.String
@@ -884,35 +885,26 @@ public typealias VeloniumInitializationCallback = ((VeloniumSDK.VeloniumInitiali
   @objc public var itunesId: Swift.String? {
     get
   }
-  @objc public var appId: Swift.String? {
-    get
-  }
-  @objc public var publisherName: Swift.String? {
-    get
-  }
-  @objc public var publisherId: Swift.String? {
-    get
-  }
-  @objc public var publisherDomain: Swift.String? {
-    get
-  }
-  @objc public var bidfloor: Foundation.NSNumber? {
-    get
-  }
-  @objc public var appCategories: [Swift.String]? {
-    get
-  }
-  @objc public var battr: [Foundation.NSNumber]? {
-    get
-  }
-  @objc public var requestAddOn: Swift.String? {
+  @objc public var ortbConfigJson: Swift.String? {
     get
   }
   @objc(sharedWithBundleId:) public static func shared(bundleId: Swift.String? = nil) -> VeloniumSDK.VeloniumAppConfig
   @objc public init(bundleId: Swift.String? = nil)
+  @objc public var isConfigLoaded: Swift.Bool {
+    @objc get
+  }
   @objc public func loadConfig()
   @objc public func getEndpointUrl() -> Swift.String
+  @objc(getOrtbStringValue:) public func getOrtbStringValue(_ path: Swift.String) -> Swift.String?
   public func clearCache()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PBMOrtbConfigResolver) @objcMembers public class OrtbConfigResolver : ObjectiveC.NSObject {
+  @objc public static func normalize(ortbBlock: [Swift.String : Any]) -> [Swift.String : Any]
+  @objc public static func getValue(from dict: [Swift.String : Any], path: Swift.String) -> Any?
+  @objc public static func getStringValue(from dict: [Swift.String : Any], path: Swift.String) -> Swift.String?
+  @objc public static func toJsonString(_ dict: [Swift.String : Any]) -> Swift.String?
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol VeloniumEventDelegate {
@@ -1464,6 +1456,12 @@ public class VeloniumRemoteConfig {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMArbitraryORTBService) @objcMembers public class ArbitraryORTBService : ObjectiveC.NSObject {
   @objc public static func merge(sdkORTB: [Swift.String : Any], impORTB: Swift.String?, globalAdUnitORTB: Swift.String?, globalORTB: Swift.String?) -> [Swift.String : Any]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PBMBidRequestOrderHelper) @objcMembers public class BidRequestOrderHelper : ObjectiveC.NSObject {
+  @objc(orderedJSONStringFromJSONString:) public static func orderedJSONString(from jsonString: Swift.String) -> Swift.String
+  @objc(orderedJSONStringFromDictionary:) public static func orderedJSONString(from dictionary: [Swift.String : Any]) -> Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(PBMPathBuilder) @objcMembers public class PathBuilder : ObjectiveC.NSObject {
@@ -2887,13 +2885,13 @@ public typealias VeloniumJSLibraryContentsCallback = (Swift.String?) -> ()
     @objc get
     @objc set
   }
-  @objc public var coordinates: CoreLocation.CLLocationCoordinate2D {
+  @objc public var coordinates: _LocationEssentials.CLLocationCoordinate2D {
     @objc get
   }
   @objc public var coordinatesAreValid: Swift.Bool {
     @objc get
   }
-  @objc public var horizontalAccuracy: CoreLocation.CLLocationAccuracy {
+  @objc public var horizontalAccuracy: _LocationEssentials.CLLocationAccuracy {
     @objc get
   }
   @objc public var timestamp: Foundation.Date? {
@@ -2902,7 +2900,7 @@ public typealias VeloniumJSLibraryContentsCallback = (Swift.String?) -> ()
   @objc deinit
 }
 extension VeloniumSDK.LocationManager : CoreLocation.CLLocationManagerDelegate {
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [_LocationEssentials.CLLocation])
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
 }

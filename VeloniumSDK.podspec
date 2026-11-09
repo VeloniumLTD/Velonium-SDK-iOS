@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VeloniumSDK'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'VeloniumSDK - Mobile Advertising SDK'
   s.description      = 'VeloniumSDK is a comprehensive mobile advertising SDK supporting banner, interstitial, rewarded, and native ads.'
   
@@ -15,6 +15,10 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
 
   s.vendored_frameworks = 'VeloniumSDK.xcframework'
+
+  # Apple privacy manifest (tracking domains, collected data, required-reason APIs).
+  # Shipped as a resource bundle because VeloniumSDK is a static framework.
+  s.resource_bundles = { 'VeloniumSDKPrivacy' => ['PrivacyInfo.xcprivacy'] }
 
   s.frameworks = [
     'CoreTelephony',
