@@ -882,6 +882,9 @@ public typealias VeloniumInitializationCallback = (VeloniumSDK.VeloniumInitializ
   @objc public var endpoint: Swift.String? {
     get
   }
+  @objc public var endpointNonTracking: Swift.String? {
+    get
+  }
   @objc public var itunesId: Swift.String? {
     get
   }
@@ -895,6 +898,7 @@ public typealias VeloniumInitializationCallback = (VeloniumSDK.VeloniumInitializ
   }
   @objc public func loadConfig()
   @objc public func getEndpointUrl() -> Swift.String
+  @objc public func getNonTrackingEndpointUrl() -> Swift.String?
   @objc(getOrtbStringValue:) public func getOrtbStringValue(_ path: Swift.String) -> Swift.String?
   public func clearCache()
   @objc deinit

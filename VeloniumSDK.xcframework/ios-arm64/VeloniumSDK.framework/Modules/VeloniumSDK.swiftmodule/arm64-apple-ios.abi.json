@@ -41057,6 +41057,71 @@
           },
           {
             "kind": "Var",
+            "name": "endpointNonTracking",
+            "printedName": "endpointNonTracking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(py)endpointNonTracking",
+            "mangledName": "$s11VeloniumSDK0A9AppConfigC19endpointNonTrackingSSSgvp",
+            "moduleName": "VeloniumSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)endpointNonTracking",
+                "mangledName": "$s11VeloniumSDK0A9AppConfigC19endpointNonTrackingSSSgvg",
+                "moduleName": "VeloniumSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "itunesId",
             "printedName": "itunesId",
             "children": [
@@ -41347,6 +41412,37 @@
             "declAttributes": [
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNonTrackingEndpointUrl",
+            "printedName": "getNonTrackingEndpointUrl()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)getNonTrackingEndpointUrl",
+            "mangledName": "$s11VeloniumSDK0A9AppConfigC25getNonTrackingEndpointUrlSSSgyF",
+            "moduleName": "VeloniumSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -137737,70 +137833,70 @@
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1054,
+      "offset": 1305,
       "length": 19,
       "value": "\"VeloniumAppConfig\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
+      "offset": 1375,
       "length": 54,
       "value": "\"https:\/\/veloniumsdk.s3.us-east-2.amazonaws.com\/apps\/\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1220,
+      "offset": 1471,
       "length": 21,
       "value": "\"velonium_app_config\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1534,
       "length": 17,
       "value": "\"app_config_json\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1346,
+      "offset": 1597,
       "length": 21,
       "value": "\"app_last_fetch_time\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1419,
+      "offset": 1670,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1542,
+      "offset": 1793,
       "length": 31,
       "value": "\"com.velonium.appconfig.shared\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "Dictionary",
-      "offset": 1820,
+      "offset": 2134,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1855,
+      "offset": 2169,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9313,
+      "offset": 10927,
       "length": 20,
       "value": "\"OrtbConfigResolver\""
     },
@@ -140126,7 +140222,7 @@
       "kind": "StringLiteral",
       "offset": 4729,
       "length": 7,
-      "value": "\"1.0.5\""
+      "value": "\"1.0.6\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/Constants.swift",
