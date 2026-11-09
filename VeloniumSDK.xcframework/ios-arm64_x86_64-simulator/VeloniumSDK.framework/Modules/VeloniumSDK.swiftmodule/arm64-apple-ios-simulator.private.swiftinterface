@@ -878,24 +878,25 @@ public typealias VeloniumInitializationCallback = (VeloniumSDK.VeloniumInitializ
   @objc public static func containsPluginRenderer(_ pluginRenderer: any VeloniumSDK.VeloniumSDKPluginRenderer) -> Swift.Bool
   @objc deinit
 }
-@objc public class VeloniumAppConfig : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class VeloniumAppConfig : ObjectiveC.NSObject {
   @objc public var endpoint: Swift.String? {
-    get
+    @objc get
   }
   @objc public var endpointNonTracking: Swift.String? {
-    get
+    @objc get
   }
   @objc public var itunesId: Swift.String? {
-    get
+    @objc get
   }
   @objc public var ortbConfigJson: Swift.String? {
-    get
+    @objc get
   }
   @objc(sharedWithBundleId:) public static func shared(bundleId: Swift.String? = nil) -> VeloniumSDK.VeloniumAppConfig
-  @objc public init(bundleId: Swift.String? = nil)
+  @objc convenience public init(bundleId: Swift.String? = nil)
   @objc public var isConfigLoaded: Swift.Bool {
     @objc get
   }
+  @objc public func loadConfigAsync(completion: (() -> Swift.Void)?)
   @objc public func loadConfig()
   @objc public func getEndpointUrl() -> Swift.String
   @objc public func getNonTrackingEndpointUrl() -> Swift.String?
@@ -925,7 +926,7 @@ public typealias VeloniumInitializationCallback = (VeloniumSDK.VeloniumInitializ
     get
   }
 }
-public class VeloniumRemoteConfig {
+@_hasMissingDesignatedInitializers public class VeloniumRemoteConfig {
   public var statusUrl: Swift.String {
     get
   }
@@ -938,7 +939,11 @@ public class VeloniumRemoteConfig {
   public var version: Swift.String {
     get
   }
-  public init()
+  public var isConfigLoaded: Swift.Bool {
+    get
+  }
+  convenience public init()
+  public func loadConfigAsync(completion: (() -> Swift.Void)?)
   public func loadConfig()
   public func clearCache()
   public func printConfig()

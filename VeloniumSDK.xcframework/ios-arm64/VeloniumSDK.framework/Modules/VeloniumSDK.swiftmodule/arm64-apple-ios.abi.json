@@ -41015,13 +41015,9 @@
             "mangledName": "$s11VeloniumSDK0A9AppConfigC8endpointSSSgvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -41047,7 +41043,6 @@
                 "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)endpoint",
                 "mangledName": "$s11VeloniumSDK0A9AppConfigC8endpointSSSgvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -41080,13 +41075,9 @@
             "mangledName": "$s11VeloniumSDK0A9AppConfigC19endpointNonTrackingSSSgvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -41112,7 +41103,6 @@
                 "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)endpointNonTracking",
                 "mangledName": "$s11VeloniumSDK0A9AppConfigC19endpointNonTrackingSSSgvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -41145,13 +41135,9 @@
             "mangledName": "$s11VeloniumSDK0A9AppConfigC8itunesIdSSSgvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -41177,7 +41163,6 @@
                 "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)itunesId",
                 "mangledName": "$s11VeloniumSDK0A9AppConfigC8itunesIdSSSgvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -41210,13 +41195,9 @@
             "mangledName": "$s11VeloniumSDK0A9AppConfigC04ortbD4JsonSSSgvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -41242,7 +41223,6 @@
                 "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)ortbConfigJson",
                 "mangledName": "$s11VeloniumSDK0A9AppConfigC04ortbD4JsonSSSgvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -41323,10 +41303,11 @@
             "moduleName": "VeloniumSDK",
             "objc_name": "initWithBundleId:",
             "declAttributes": [
+              "Convenience",
               "AccessControl",
               "ObjC"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           },
           {
             "kind": "Var",
@@ -41374,6 +41355,54 @@
           },
           {
             "kind": "Function",
+            "name": "loadConfigAsync",
+            "printedName": "loadConfigAsync(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@VeloniumSDK@objc(cs)VeloniumAppConfig(im)loadConfigAsyncWithCompletion:",
+            "mangledName": "$s11VeloniumSDK0A9AppConfigC04loadD5Async10completionyyycSg_tF",
+            "moduleName": "VeloniumSDK",
+            "objc_name": "loadConfigAsyncWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "loadConfig",
             "printedName": "loadConfig()",
             "children": [
@@ -41389,7 +41418,8 @@
             "moduleName": "VeloniumSDK",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -41411,7 +41441,8 @@
             "moduleName": "VeloniumSDK",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -41540,6 +41571,7 @@
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -41940,6 +41972,16 @@
             "usr": "s:SH",
             "mangledName": "$sSH"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VeloniumSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -42399,12 +42441,9 @@
             "mangledName": "$s11VeloniumSDK0A12RemoteConfigC9statusUrlSSvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -42422,7 +42461,6 @@
                 "usr": "s:11VeloniumSDK0A12RemoteConfigC9statusUrlSSvg",
                 "mangledName": "$s11VeloniumSDK0A12RemoteConfigC9statusUrlSSvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -42444,11 +42482,8 @@
             "mangledName": "$s11VeloniumSDK0A12RemoteConfigC8logLevelSSvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -42466,7 +42501,6 @@
                 "usr": "s:11VeloniumSDK0A12RemoteConfigC8logLevelSSvg",
                 "mangledName": "$s11VeloniumSDK0A12RemoteConfigC8logLevelSSvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -42488,11 +42522,8 @@
             "mangledName": "$s11VeloniumSDK0A12RemoteConfigC20cacheExpirationHoursSivp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -42510,7 +42541,6 @@
                 "usr": "s:11VeloniumSDK0A12RemoteConfigC20cacheExpirationHoursSivg",
                 "mangledName": "$s11VeloniumSDK0A12RemoteConfigC20cacheExpirationHoursSivg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -42532,11 +42562,8 @@
             "mangledName": "$s11VeloniumSDK0A12RemoteConfigC7versionSSvp",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -42554,7 +42581,47 @@
                 "usr": "s:11VeloniumSDK0A12RemoteConfigC7versionSSvg",
                 "mangledName": "$s11VeloniumSDK0A12RemoteConfigC7versionSSvg",
                 "moduleName": "VeloniumSDK",
-                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConfigLoaded",
+            "printedName": "isConfigLoaded",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11VeloniumSDK0A12RemoteConfigC02isD6LoadedSbvp",
+            "mangledName": "$s11VeloniumSDK0A12RemoteConfigC02isD6LoadedSbvp",
+            "moduleName": "VeloniumSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11VeloniumSDK0A12RemoteConfigC02isD6LoadedSbvg",
+                "mangledName": "$s11VeloniumSDK0A12RemoteConfigC02isD6LoadedSbvg",
+                "moduleName": "VeloniumSDK",
                 "accessorKind": "get"
               }
             ]
@@ -42576,9 +42643,56 @@
             "mangledName": "$s11VeloniumSDK0A12RemoteConfigCACycfc",
             "moduleName": "VeloniumSDK",
             "declAttributes": [
+              "Convenience",
               "AccessControl"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "loadConfigAsync",
+            "printedName": "loadConfigAsync(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11VeloniumSDK0A12RemoteConfigC04loadD5Async10completionyyycSg_tF",
+            "mangledName": "$s11VeloniumSDK0A12RemoteConfigC04loadD5Async10completionyyycSg_tF",
+            "moduleName": "VeloniumSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -42652,6 +42766,7 @@
           "AccessControl",
           "RawDocComment"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -137854,51 +137969,86 @@
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 1526,
       "length": 17,
       "value": "\"app_config_json\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1581,
       "length": 21,
       "value": "\"app_last_fetch_time\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1670,
+      "offset": 1654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
+      "kind": "FloatLiteral",
+      "offset": 1799,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
+      "kind": "FloatLiteral",
+      "offset": 1951,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 2076,
       "length": 31,
       "value": "\"com.velonium.appconfig.shared\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "Dictionary",
-      "offset": 2134,
+      "offset": 2520,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2169,
+      "offset": 2556,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumAppConfig.swift",
       "kind": "StringLiteral",
-      "offset": 10927,
+      "offset": 14114,
       "length": 20,
       "value": "\"OrtbConfigResolver\""
+    },
+    {
+      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumConfigFetcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1367,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumConfigFetcher.swift",
+      "kind": "Array",
+      "offset": 1413,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumConfigFetcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4013,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumInitializationStatus.swift",
@@ -137924,371 +138074,84 @@
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 962,
+      "offset": 1043,
       "length": 22,
       "value": "\"VeloniumRemoteConfig\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1077,
+      "offset": 1158,
       "length": 73,
       "value": "\"https:\/\/veloniumsdk.s3.us-east-2.amazonaws.com\/velonium-sdk-config.json\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1214,
+      "offset": 1295,
       "length": 24,
       "value": "\"velonium_remote_config\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1280,
+      "offset": 1353,
       "length": 13,
       "value": "\"config_json\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1339,
+      "offset": 1404,
       "length": 17,
       "value": "\"last_fetch_time\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1416,
+      "offset": 1481,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1546,
-      "length": 35,
-      "value": "\"https:\/\/ads-pbs.adxvel.com\/status\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1625,
-      "length": 7,
-      "value": "\"DEBUG\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3868,
-      "length": 56,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3896,
-      "length": 1,
-      "value": "\": Invalid remote config URL\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3945,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4132,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4252,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4336,
-      "length": 5,
-      "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4376,
+      "offset": 1646,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4465,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4505,
-      "length": 8,
-      "value": "\"Accept\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4540,
-      "length": 17,
-      "value": "\"VeloniumSDK\/1.0\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4579,
-      "length": 12,
-      "value": "\"User-Agent\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4619,
-      "length": 10,
-      "value": "\"no-cache\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4651,
-      "length": 15,
-      "value": "\"Cache-Control\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4693,
-      "length": 10,
-      "value": "\"no-cache\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4725,
-      "length": 8,
-      "value": "\"Pragma\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5059,
-      "length": 64,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5087,
-      "length": 1,
-      "value": "\": Self is nil in completion handler\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5236,
-      "length": 91,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5264,
-      "length": 1,
-      "value": "\": Failed to fetch remote config: \""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5326,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5511,
-      "length": 53,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5539,
-      "length": 1,
-      "value": "\": No internet connection\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5636,
-      "length": 48,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5664,
-      "length": 1,
-      "value": "\": Request timed out\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5762,
-      "length": 59,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5790,
-      "length": 1,
-      "value": "\": Cannot find host - check DNS\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5886,
-      "length": 71,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5914,
-      "length": 1,
-      "value": "\": Network error: \""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 5956,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6148,
-      "length": 52,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6176,
-      "length": 1,
-      "value": "\": Invalid response type\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6309,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6346,
-      "length": 74,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6374,
-      "length": 1,
-      "value": "\": HTTP error code: \""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6419,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6544,
-      "length": 61,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6572,
-      "length": 1,
-      "value": "\": Error response: \""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6604,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6796,
-      "length": 61,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 6824,
-      "length": 1,
-      "value": "\": Failed to decode response data\""
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7105,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7329,
+      "offset": 1798,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7402,
-      "length": 81,
-      "value": "\"\""
+      "offset": 1910,
+      "length": 35,
+      "value": "\"https:\/\/ads-pbs.adxvel.com\/status\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7430,
-      "length": 1,
-      "value": "\": Fetch timeout - request took longer than 3 seconds\""
+      "offset": 1989,
+      "length": 7,
+      "value": "\"DEBUG\""
+    },
+    {
+      "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2434,
+      "length": 9,
+      "value": "\"default\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/ConfigurationAndTargeting\/VeloniumRemoteConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 7530,
+      "offset": 2712,
       "length": 5,
       "value": "false"
     },
@@ -140222,7 +140085,7 @@
       "kind": "StringLiteral",
       "offset": 4729,
       "length": 7,
-      "value": "\"1.0.6\""
+      "value": "\"1.0.7\""
     },
     {
       "filePath": "\/Users\/mac\/Velonium SDK\/sdk\/ios\/VeloniumSDK\/VeloniumSDK\/Sources\/Swift\/Constants.swift",

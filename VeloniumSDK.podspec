@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'VeloniumSDK'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'VeloniumSDK - Mobile Advertising SDK'
   s.description      = 'VeloniumSDK is a comprehensive mobile advertising SDK supporting banner, interstitial, rewarded, and native ads.'
   
